@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock ✊ Paper ✋ Scissors ✌️</h1>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <div class="scoreboard">
+      <div><span>Player:</span> <span id="player-score">0</span></div>
+      <div><span>Computer:</span> <span id="computer-score">0</span></div>
+    </div>
+
+    <div class="choices">
+      <button id="rock" class="circle pink">
+        <span class="icon">✊</span> Rock
+      </button>
+      <button id="paper" class="circle yellow">
+        <span class="icon">✋</span> Paper
+      </button>
+      <button id="scissors" class="circle blue">
+        <span class="icon">✌️</span> Scissors
+      </button>
+    </div>
+
+    <div class="result">
+      <p id="player-choice">Your choice: -</p>
+      <p id="computer-choice">Computer choice: -</p>
+      <p id="winner">Winner: -</p>
+    </div>
+
+    <h3>Game History</h3>
+    <ul id="history"></ul>
+
+    <button id="reset-btn">🔄 Reset Game</button>
+    <footer>
+      <p>🎮 Best of 5 Game • Designed & Developed by Hemant 👨‍💻</p>
+    </footer>
+
+    <div id="winnerModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal">&times;</span>
+        <h2 id="modalMessage">🎉 You win the match!</h2>
+        <button id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
